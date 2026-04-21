@@ -1,0 +1,183 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainwithme - Evolving bodies</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: #061b4d;
+            color: #ff0000;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 10%;
+            background: rgba(0,0,0,0.5);
+            position: fixed;
+            width: 100%;
+        }
+
+        header h1 {
+            color: #22c55e;
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #fff;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #22c55e;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10%;
+            background: linear-gradient(to right, #020617, #0f172a);
+        }
+
+        .hero-text h2 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .hero-text span {
+            color: #22c55e;
+        }
+
+        .hero-text p {
+            margin-bottom: 20px;
+            color: #cbd5f5;
+        }
+
+        .btn {
+            padding: 12px 25px;
+            background: #22c55e;
+            border: none;
+            color: #000;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .section {
+            padding: 80px 10%;
+            text-align: center;
+        }
+
+        .cards {
+            display: flex;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .card {
+            flex: 1;
+            background: #1e293b;
+            padding: 30px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            background: #334155;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #020617;
+            margin-top: 40px;
+        }
+
+        @media(max-width: 900px) {
+            .cards {
+                flex-direction: column;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Trainwithme</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Programs</a>
+        <a href="#">Coaches</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h2>Transform Your <span>Body</span> Today</h2>
+        <p>Join the best fitness platform to build strength, lose fat, and stay consistent.</p>
+        <button class="btn">Start Now</button>
+    </div>
+</section>
+
+<section class="section">
+    <h2>Our Programs</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Strength Training</h3>
+            <p>Build muscle and increase power with expert-designed workouts.</p>
+        </div>
+        <div class="card">
+            <h3>Fat Loss</h3>
+            <p>Burn calories efficiently and reach your ideal weight.</p>
+        </div>
+        <div class="card">
+            <h3>Mobility</h3>
+            <p>Improve flexibility and prevent injuries.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <h2>Why Choose Us?</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Expert Challenges</h3>
+            <p>Certified results from users experiences.</p>
+        </div>
+        <div class="card">
+            <h3>Personalized Plans</h3>
+            <p>Custom workouts based on your goals.</p>
+        </div>
+        <div class="card">
+            <h3>Community</h3>
+            <p>Stay motivated with a strong fitness community.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Trainwithme. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
